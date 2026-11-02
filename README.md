@@ -11,34 +11,34 @@ Entregable 2: Desarrollo técnico parcial del sistema.
 
 ## Descripción
 
-Sistema para gestionar las operaciones del Hotel Vista Real (una empresa simulada): habitaciones, clientes, reservaciones, hospedaje y facturación.
+Sistema para administrar las operaciones del Hotel Vista Real, una empresa simulada: habitaciones, clientes, reservaciones, hospedaje y facturación.
 
-En este avance está implementado el módulo de **Habitaciones**, con su CRUD completo, conectado a SQL Server y en una aplicación de consola.
+Este avance incluye el módulo de **Habitaciones**: registrar, consultar, modificar y eliminar habitaciones. Funciona como aplicación de consola y guarda la información en SQL Server.
 
 ## Qué incluye este avance
 
 - Base de datos en SQL Server con 9 tablas relacionadas y datos de prueba.
-- Clases y entidades: `Habitacion` (clase abstracta), `HabitacionEstandar` y `HabitacionSuite` (herencia y polimorfismo).
-- Interfaz `iHabitacionDatos` implementada por `HabitacionDatos` (acceso a datos con ADO.NET).
-- Validaciones y reglas de negocio en la capa de negocio.
-- Uso de `List`, `Dictionary`, LINQ y expresiones lambda.
-- Manejo de excepciones con `try-catch-finally`.
-- Respaldo de habitaciones en un archivo JSON (escritura, lectura, serialización y deserialización).
+- Clases del sistema: `Habitacion` (clase abstracta), `HabitacionEstandar` y `HabitacionSuite`, que heredan de ella.
+- Interfaz `iHabitacionDatos`, implementada por `HabitacionDatos`, que se conecta a la base de datos con ADO.NET.
+- Validaciones y reglas de negocio, por ejemplo: no se permiten habitaciones con número repetido ni tarifas menores o iguales a cero.
+- Uso de `List`, `Dictionary` y consultas LINQ.
+- Manejo de errores con `try-catch-finally`.
+- Respaldo de las habitaciones en un archivo JSON, que se puede guardar y volver a leer.
 
 ## Estructura del proyecto
 
-- `Entidades`: clases del sistema (`Habitacion`, `HabitacionEstandar`, `HabitacionSuite`, `HabitacionRespaldo`).
-- `Datos`: acceso a la base de datos y al archivo JSON (`iHabitacionDatos`, `HabitacionDatos`, `RespaldoJson`).
-- `Negocio`: reglas y consultas (`HabitacionNegocio`).
-- `Program.cs`: menú de la aplicación de consola.
+- **Entidades:** las clases del sistema (`Habitacion`, `HabitacionEstandar`, `HabitacionSuite`, `HabitacionRespaldo`).
+- **Datos:** el acceso a la base de datos y al archivo JSON (`iHabitacionDatos`, `HabitacionDatos`, `RespaldoJson`).
+- **Negocio:** las reglas y consultas (`HabitacionNegocio`).
+- **Program.cs:** el menú de la aplicación.
 
 ## Cómo ejecutarlo
 
 1. Abrir SQL Server Management Studio y conectarse a `localhost\SQLEXPRESS`.
-2. Abrir el archivo `HotelVistaRealDB.sql` y ejecutarlo. Crea la base de datos `HotelVistaRealDB`, las tablas y los datos de prueba.
-3. Abrir `HotelVistaReal.slnx` en Visual Studio. Si falta el paquete NuGet `Microsoft.Data.SqlClient`, se restaura o se instala desde Proyecto > Administrar paquetes NuGet.
-4. Si el nombre del servidor es distinto a `localhost\SQLEXPRESS`, cambiarlo en la cadena de conexión de `HabitacionDatos.cs`.
-5. Ejecutar con F5.
+2. Abrir el archivo `HotelVistaRealDB.sql` y ejecutarlo. Crea la base de datos `HotelVistaRealDB`, sus tablas y los datos de prueba.
+3. Abrir `HotelVistaReal.slnx` en Visual Studio. El paquete `Microsoft.Data.SqlClient` se descarga solo al compilar. Si marca error, instalarlo desde Proyecto > Administrar paquetes NuGet.
+4. Si el servidor tiene otro nombre, cambiarlo en la cadena de conexión del archivo `HabitacionDatos.cs`.
+5. Presionar F5 para ejecutar.
 
 ## Opciones del menú
 
