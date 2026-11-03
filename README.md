@@ -51,7 +51,7 @@ Este avance incluye el módulo de **Habitaciones**: registrar, consultar, modifi
 7. Mostrar habitaciones disponibles
 8. Mostrar habitaciones ordenadas por tarifa
 9. Cantidad de habitaciones por estado
-10. Exportar habitaciones a JSON (respaldo)
+10. Guardar respaldo en JSON
 11. Leer respaldo JSON
 12. Salir
 
