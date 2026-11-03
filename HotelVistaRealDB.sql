@@ -95,11 +95,12 @@ INSERT INTO Roles(NombreRol,Descripcion) VALUES
 ('Facturacion','Genera y consulta facturas'),
 ('Gerente','Consulta reportes e ingresos');
 
+-- Las contraseñas de prueba se guardan como hash, no como texto plano (requisito del Entregable 1).
 INSERT INTO Usuarios(Nombre,NombreUsuario,ContrasenaHash,IdRol) VALUES
-('Joshua Quesada','admin','240BE518FABD2724DDB6F04EEB1DA5967448D7E831C08C8FA822809F74C720A9',1),
-('Dylan Castillo','recepcion','5D37ED314CF2B5C8462B52B12CD512E2AC4A180E75598DA4F12BFB0DEA6D0A67',2),
-('Bryan Alvarado','facturacion','C9C729BE66596544F06E722D4D449DA78EB1289BAF77906F0A762100647EC2D6',3),
-('Gustavo Aguilar','gerente','ECFBA551324356E5BD27B548ADF36B728783F60D9B573D142CAAC7BAAD62BE49',4);
+('Administrador del sistema','admin','240BE518FABD2724DDB6F04EEB1DA5967448D7E831C08C8FA822809F74C720A9',1),
+('Recepcionista del hotel','recepcion','5D37ED314CF2B5C8462B52B12CD512E2AC4A180E75598DA4F12BFB0DEA6D0A67',2),
+('Encargado de facturación','facturacion','C9C729BE66596544F06E722D4D449DA78EB1289BAF77906F0A762100647EC2D6',3),
+('Gerente del hotel','gerente','ECFBA551324356E5BD27B548ADF36B728783F60D9B573D142CAAC7BAAD62BE49',4);
 
 INSERT INTO Clientes(Identificacion,Nombre,Apellidos,Telefono,Correo,Direccion) VALUES
 ('101110234','Mario','Morales Soto','88884512','mario@correo.com','Heredia'),
@@ -120,11 +121,11 @@ INSERT INTO Servicios(Nombre,Descripcion,Precio) VALUES
 ('Spa','Masaje relajante',25000);
 
 INSERT INTO Reservaciones(IdCliente,IdHabitacion,FechaEntrada,FechaSalida,Estado) VALUES
-(1,3,'2026-10-30','2026-11-02','Finalizada'),
+(1,3,'2026-11-01','2026-11-04','Activa'),
 (2,2,'2026-11-10','2026-11-12','Activa');
 
 INSERT INTO Hospedajes(IdReservacion,FechaCheckIn,FechaCheckOut,Estado) VALUES
-(1,'2026-10-30 14:00',NULL,'Activo');
+(1,'2026-11-01 14:00',NULL,'Activo');
 
 INSERT INTO DetalleServicios(IdHospedaje,IdServicio,Cantidad,Subtotal) VALUES
 (1,1,2,16000);
