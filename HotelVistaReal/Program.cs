@@ -28,7 +28,7 @@ namespace HotelVistaReal
                 Console.WriteLine("7. Mostrar habitaciones disponibles");
                 Console.WriteLine("8. Mostrar habitaciones ordenadas por tarifa");
                 Console.WriteLine("9. Cantidad de habitaciones por estado");
-                Console.WriteLine("10. Exportar habitaciones a JSON (respaldo)");
+                Console.WriteLine("10. Guardar respaldo en JSON");
                 Console.WriteLine("11. Leer respaldo JSON");
                 Console.WriteLine("12. Salir");
                 Console.Write("Seleccione una opción: ");
