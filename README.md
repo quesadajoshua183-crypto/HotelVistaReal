@@ -7,7 +7,7 @@ Entregable 2: Desarrollo técnico parcial del sistema.
 
 - Joshua Gabriel Quesada
 - Bryan Alvarado Hidalgo 
-- 
+- Gustavo Aguilar Jara
 
 ## Descripción
 
