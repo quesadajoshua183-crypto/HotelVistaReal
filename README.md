@@ -6,8 +6,8 @@ Entregable 2: Desarrollo técnico parcial del sistema.
 ## Integrantes
 
 - Joshua Gabriel Quesada
-- Bryan Alvarado Hidalgo
-- Gustavo Alonso Aguilar
+- 
+- 
 
 ## Descripción
 
@@ -59,5 +59,4 @@ Este avance incluye el módulo de **Habitaciones**: registrar, consultar, modifi
 
 C#, .NET, SQL Server, ADO.NET, LINQ, JSON, Git y GitHub.
 
-By Joshua -
 
