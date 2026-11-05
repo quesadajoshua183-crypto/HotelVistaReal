@@ -6,7 +6,7 @@ Entregable 2: Desarrollo técnico parcial del sistema.
 ## Integrantes
 
 - Joshua Gabriel Quesada
-- 
+- Bryan Alvarado Hidalgo 
 - 
 
 ## Descripción
